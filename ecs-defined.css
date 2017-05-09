@@ -1,0 +1,94 @@
+/* 自定义input边框 */
+.ec-input{
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	outline: none;
+	transition: all 0.1s linear;
+	-webkit-transition:all 0.1s linear;
+	-moz-transition:all 0.1s linear;
+	-o-transition:all 0.1s linear;
+	padding-left: 5px;
+}
+/* 自定义input获得焦点后的样式 */
+input.ec-input:focus{
+	/*边框阴影 row col px  color  insert(内阴影) 前两项为0是四周阴影 */
+	box-shadow:0px 0px 3px blue;
+	border:1px solid transparent;
+}
+/* 自定义单选框 */
+.ec-label{
+   
+}
+.ec-label>input{
+    display: none;
+}
+.ec-label>i{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	border: 1px solid #ddd;
+	vertical-align: middle;
+	transition: all 0.2s linear;
+	-webkit-transition:all 0.2s linear;
+	-moz-transition:all 0.2s linear;
+	-o-transition:all 0.2s linear;
+	position: relative;
+}
+.ec-label>input:checked+i{
+	border: 1px solid transparent;
+	box-shadow:0px 0px 3px blue;
+}
+.ec-label>input:checked+i:after{
+    content: '';
+    display:inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background:blue;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+.ec-label
+/* 自定义栅格布局 */
+.container:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.container>.ec-1{
+	float: left;
+	width: 10%;
+}
+.container>.ec-2{
+	float: left;
+	width: 20%;
+}
+.container>.ec-3{
+	float: left;
+	width: 30%;
+}
+.container>.ec-4{
+	float: left;
+	width: 40%;
+}
+.container>.ec-5{
+	float: left;
+	width: 50%;
+}
+.container>.ec-6{
+	float: left;
+	width: 60%;
+}
+.container>.ec-7{
+	float: left;
+	width: 70%;
+}
+.container>.ec-8{
+	float: left;
+	width: 80%;
+}
