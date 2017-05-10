@@ -16,13 +16,13 @@ input.ec-input:focus{
 	border:1px solid transparent;
 }
 /* 自定义单选框 */
-.ec-label{
+.ec-label-radio{
    
 }
-.ec-label>input{
+.ec-label-radio>input{
     display: none;
 }
-.ec-label>i{
+.ec-label-radio>i{
 	display: inline-block;
 	width: 18px;
 	height: 18px;
@@ -35,11 +35,11 @@ input.ec-input:focus{
 	-o-transition:all 0.2s linear;
 	position: relative;
 }
-.ec-label>input:checked+i{
+.ec-label-radio>input:checked+i{
 	border: 1px solid transparent;
 	box-shadow:0px 0px 3px blue;
 }
-.ec-label>input:checked+i:after{
+.ec-label-radio>input:checked+i:after{
     content: '';
     display:inline-block;
     width: 10px;
@@ -53,7 +53,6 @@ input.ec-input:focus{
     bottom: 0px;
     margin: auto;
 }
-.ec-label
 /* 自定义栅格布局 */
 .container:after{
 	content: '';
